@@ -25,7 +25,70 @@
  * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
  *
  * � 2013 MyFonts Inc
-*/@import url("//hello.myfonts.net/count/27ac33");
+*/
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/OpenSans-Semibold-webfont.eot');
+    src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanssemibold_italic';
+    src: url('../fonts/OpenSans-SemiboldItalic-webfont.eot');
+    src: url('../fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-SemiboldItalic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-SemiboldItalic-webfont.svg#open_sanssemibold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('../fonts/OpenSans-Italic-webfont.eot');
+    src: url('../fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Italic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanslight_italic';
+    src: url('../fonts/OpenSans-LightItalic-webfont.eot');
+    src: url('../fonts/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-LightItalic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-LightItalic-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-LightItalic-webfont.svg#open_sanslight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.scroller-arrow-holder {
+	height:60px;
+}
 .panel {
 	padding:10px;
 	margin-bottom:20px;
@@ -1151,7 +1214,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-rendering:optimizelegibility
 }
 h1 {
-	font-size:4.5em;
+	font-size:2em;
 	line-height:1;
 	margin:0 0 .5em
 }
@@ -1291,23 +1354,16 @@ body>.wrap {
 }
 }
 .footer-main {
-	background-image:-webkit-gradient(linear, left 0, left 100%, from(#eeedea), to(#FFF));
-	background-image:-webkit-linear-gradient(top, #eeedea, 0%, #FFF, 100%);
-	background-image:-moz-linear-gradient(top, #eeedea 0, #FFF 100%);
-	background-image:linear-gradient(to bottom, #eeedea 0, #FFF 100%);
-	background-repeat:repeat-x;
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeedea', endColorstr='#ffffffff', GradientType=0);
-	background-color:#FFF;
+	background-color:#082c40;
 	width:100%;
 	height:7em;
-	border-top:1px solid #FFF;
 	margin-top:-7em;
 	padding-bottom:1.5em;
 	padding-top:1.5em;
 	position:relative
 }
 .footer-main nav {
-	float:left
+	text-align:right;
 }
 .footer-main .box {
 	float:right
@@ -2545,17 +2601,21 @@ nav .nav-item {
 }
 }
 .nav-footer .nav-item {
-	margin:.2em 1em .2em 0
+	margin:.2em 0 .2em 1em
 }
 .nav-footer .nav-item a {
-	color:#000;
+	color:#FFF;
 	display:inline-block;
-	font-family:"ProximaNova-Bold", Helvetica, Arial, sans-serif;
-	font-size:.875em
+	font-family: 'open_sanssemibold';
+	font-size:14px;
+}
+.nav-footer p {
+	font-size:10px;
+	color:#a1a0a0;
+	font-family: 'open_sanslight';
 }
 .nav-footer .small .nav-item a {
 	color:#999;
-	font-family:"ProximaNova-Regular", Helvetica, Arial, sans-serif;
 	font-size:.75em
 }
 @media screen and (max-width:767px) {
@@ -2827,7 +2887,7 @@ nav .nav-item {
 }
 .scroller-arrow-half {
 	width:72px;
-	height:33px;
+	height:39px;
 	background-image:url(../images/arrow-half.png)
 }
 .sign-up {
@@ -3399,7 +3459,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', end
 	margin-bottom:1.8181818182em
 }
 .page-homepage h1 {
-	color:#7ab800
+	color:#000
 }
 .page-homepage .dummy-firstload {
 	background-color:#000;
@@ -6686,6 +6746,40 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', end
 	color:#FFF;
 	-webkit-font-smoothing:antialiased;
 	margin-bottom:.4375em
+}
+.clr {
+	clear:both;
+}
+#section-listen-everywhere {
+	background:url(../images/advice-bg.gif) no-repeat left bottom;
+}
+.adviceblk {
+	float:left;
+	width:16.6%;
+	text-align:center;
+}
+.adviceblk img {
+	max-width:90%;
+	height:auto;
+}
+.teamblk {
+	width:23%;
+	padding:0 1%;
+	position:relative;
+	float:left;
+}
+.teamblk img.jhoninfo {
+	position:absolute;
+	top:10px;
+	right:20px;
+	cursor:pointer;
+}
+.map {
+	float:left;
+	padding-right:20px;
+}
+#section-radio {
+	background:#082c40;
 }
 @media screen and (max-width:767px) {
 .page-video-splash h1 {
