@@ -6825,7 +6825,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', end
 	text-align:center;
 }
 .adviceblk img {
-	max-width:100%;
+	max-width:95%;
 	height:auto;
 }
 .teamblk {
@@ -6833,6 +6833,10 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', end
 	margin:0 1%;
 	position:relative;
 	float:left;
+}
+.teamblk img {
+	max-width:100%;
+	height:auto;
 }
 .teamblk img.jhoninfo {
 	position:absolute;
