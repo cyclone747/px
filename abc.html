@@ -22,6 +22,8 @@
 <link rel="apple-touch-icon-precomposed" href="images/touch-icon-57.png">
 <link rel="canonical" href="https://www.spotify.com/">
 <link rel="stylesheet" type="text/css" href="css/reboot.css" media="all">
+
+<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" media="all">
 <script>
         var spweb = spweb || {};
 spweb.config = {
@@ -35,7 +37,25 @@ spweb.config = {
 };
 </script>
 <script type="text/javascript" src="js/head.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
 
+<script>
+$(document).ready(function() {
+	$('.bxslider').bxSlider({
+	  captions: false,
+	  pager:false
+	});
+	
+	$(".teamblk img.jhoninfo").mouseover(function() {
+		$(this).parent().children(".temcap").fadeIn('slow');
+		$(this).hide();
+	});
+	$(".teamblk").mouseleave(function() {
+		$(".teamblk img.jhoninfo").show();
+		$(this).children(".temcap").fadeOut('slow');
+	});
+});
+</script>
 
 
 </head>
@@ -85,6 +105,11 @@ spweb.config = {
   
   <div style="display: none;" class="dummy-firstload"></div>
   <div class="content-main" style="visibility: visible;">
+  
+  
+  
+  
+  
     <section style="height: 670px;" id="section-soundtrack" class="soundtrack section-auto-size intro-dusk" data-auto-size="1">
       <div class="container">
         <div class="box">
@@ -98,39 +123,24 @@ spweb.config = {
         </div>
       </div>
     </section>
-    <div style="transform: translate3d(0px, 478px, 0px); width: 1349px;" class="artwork-strip">
-      <div style="transform: translate3d(0px, 64px, 0px); background-image: url('images/abc.jpg'); width: 128px; height: 128px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(0px, 192px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(128px, 128px, 0px); background-image: url('images/abc.jpg'); width: 192px; height: 192px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(64px, 0px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(64px, 192px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(128px, 0px, 0px); background-image: url('images/abc.jpg'); width: 128px; height: 128px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(320px, 128px, 0px); background-image: url('images/abc.jpg'); width: 128px; height: 128px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(320px, 256px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(320px, 320px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(384px, 256px, 0px); background-image: url('images/abc.jpg'); width: 128px; height: 128px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(448px, 128px, 0px); background-image: url('images/abc.jpg'); width: 128px; height: 128px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(512px, 64px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(576px, 64px, 0px); background-image: url('images/abc.jpg'); width: 128px; height: 128px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(576px, 192px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(704px, 64px, 0px); background-image: url('images/abc.jpg'); width: 192px; height: 192px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(640px, 192px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(640px, 256px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(704px, 256px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(896px, 0px, 0px); background-image: url('images/abc.jpg'); width: 128px; height: 128px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(896px, 128px, 0px); background-image: url('images/abc.jpg'); width: 128px; height: 128px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(1024px, 64px, 0px); background-image: url('images/abc.jpg'); width: 128px; height: 128px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(1024px, 192px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(1024px, 256px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(1088px, 192px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(1088px, 256px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(1152px, 128px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(1152px, 192px, 0px); background-image: url('images/abc.jpg'); width: 128px; height: 128px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(1152px, 320px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(1280px, 128px, 0px); background-image: url('images/abc.jpg'); width: 192px; height: 192px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(1216px, 128px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(1216px, 320px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
-      <div style="transform: translate3d(1344px, 64px, 0px); background-image: url('images/abc.jpg'); width: 64px; height: 64px;" class="artwork-strip-tile"></div>
+    
+    
+    <div style="transform: translate3d(0px, 478px, 0px); width: 1349px;" class="artwork-strip mysmallimg">
+    
+      <div style="transform: translate3d(0px, 64px, 0px); background-image: url('images/10.jpg'); width: 144px; height: 195px;" class="artwork-strip-tile smallimg"></div>
+      <div style="transform: translate3d(128px, 41px, 0px); background-image: url('images/9.jpg'); width: 152px; height: 225px;" class="artwork-strip-tile smallimg"></div>
+      <div style="transform: translate3d(276px, 78px, 0px); background-image: url('images/3.jpg'); width: 151px; height: 223px;" class="artwork-strip-tile smallimg"></div>
+      <div style="transform: translate3d(407px, 84px, 0px); background-image: url('images/4.jpg'); width: 134px; height: 197px;" class="artwork-strip-tile smallimg"></div>
+      <div style="transform: translate3d(523px, 54px, 0px); background-image: url('images/5.jpg'); width: 141px; height: 210px;" class="artwork-strip-tile smallimg"></div>
+      <div style="transform: translate3d(650px, 84px, 0px); background-image: url('images/6.jpg'); width: 153px; height: 203px;" class="artwork-strip-tile smallimg"></div>
+      <div style="transform: translate3d(762px, 128px, 0px); background-image: url('images/7.jpg'); width: 136px; height: 202px;" class="artwork-strip-tile smallimg"></div>
+      <div style="transform: translate3d(893px, 94px, 0px); background-image: url('images/8.jpg'); width: 134px; height: 201px;" class="artwork-strip-tile smallimg"></div>
+      <div style="transform: translate3d(993px, 50px, 0px); background-image: url('images/9.jpg'); width: 152px; height: 225px;" class="artwork-strip-tile smallimg"></div>
+      <div style="transform: translate3d(1106px, 84px, 0px); background-image: url('images/10.jpg');  width: 144px; height: 195px;" class="artwork-strip-tile smallimg"></div>
+      <div style="transform: translate3d(1253px, 110px, 0px); background-image: url('images/3.jpg'); width: 151px; height: 223px;" class="artwork-strip-tile smallimg"></div>
+      <div style="transform: translate3d(1373px, 60px, 0px); background-image: url('images/4.jpg'); width: 134px; height: 197px;;" class="artwork-strip-tile smallimg"></div>
+      <div style="transform: translate3d(1500px, 60px, 0px); background-image: url('images/5.jpg'); width:141px; height: 210px;" class="artwork-strip-tile smallimg"></div>
+      
     </div>
     <div style="height: 572px;" class="scroller-main" data-image="images/intro-fence.jpg" data-image-mobile="images/intro-fence-small.jpg" data-width="1600" data-height="837" data-extra-height="128" data-extra-height-mobile="64"></div>
 
@@ -180,8 +190,14 @@ Defeat is not an option.  </p>
           <div class="box">
             <h1>social</h1>
             <p>Our smashingly successful social sidecar.<br>Shake vigorously. Apply liberally. Consider and tweak continuously.</p>
-            <img src="images/socialbanner01.jpg" alt="">
+            
+            <ul class="bxslider">
+              <li><img src="images/socialbanner01.png" /></li>
+              <li><img src="images/socialbanner01.png" /></li>
+              <li><img src="images/socialbanner01.png" /></li>
+            </ul>
           </div>
+          
         </div>
       </section>
       <div class="scroller-arrow-holder"> <a href="#playlists" class="scroller-arrow scroller-arrow-half js-ga-event" data-ga-event-category="moreinfo" data-ga-event-action="arrow3_search" data-ga-event-label="mega"></a> </div>
@@ -208,18 +224,43 @@ Defeat is not an option.  </p>
             <div class="teamblk">
             	<img src="images/jhon.gif" alt="">
                 <img src="images/jhon-info.png" class="jhoninfo" alt="">
+                <div class="temcap">
+                <p>Donec vel tortor lacus, ut tincidunt urna. Suspendisse ultricies, purus quis tempus malesuada, orci nisi consequat turpis, at auctor lacus dolor quis metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vulputate auctor tristique.</p>
+                <a href="#"><img src="images/pfacebook.png"></a>
+                <a href="#"><img src="images/ptwitter.png"></a>
+                <a href="#"><img src="images/pinsta.png"></a>
+                </div>
             </div>
             <div class="teamblk">
             	<img src="images/jhon.gif" alt="">
                 <img src="images/jhon-info.png" class="jhoninfo" alt="">
+                <div class="temcap">
+                <p>Donec vel tortor lacus, ut tincidunt urna. Suspendisse ultricies, purus quis tempus malesuada, orci nisi consequat turpis, at auctor lacus dolor quis metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vulputate auctor tristique.</p>
+                <a href="#"><img src="images/pfacebook.png"></a>
+                <a href="#"><img src="images/ptwitter.png"></a>
+                <a href="#"><img src="images/pinsta.png"></a>
+                </div>
             </div>
             <div class="teamblk">
             	<img src="images/jhon.gif" alt="">
                 <img src="images/jhon-info.png" class="jhoninfo" alt="">
+                <div class="temcap">
+                <p>Donec vel tortor lacus, ut tincidunt urna. Suspendisse ultricies, purus quis tempus malesuada, orci nisi consequat turpis, at auctor lacus dolor quis metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vulputate auctor tristique.</p>
+                  <a href="#"><img src="images/pfacebook.png"></a>
+                <a href="#"><img src="images/ptwitter.png"></a>
+                <a href="#"><img src="images/pinsta.png"></a>
+                </div>
             </div>
             <div class="teamblk">
             	<img src="images/jhon.gif" alt="">
                 <img src="images/jhon-info.png" class="jhoninfo" alt="">
+                <div class="temcap">
+                <p>Donec vel tortor lacus, ut tincidunt urna. Suspendisse ultricies, purus quis tempus malesuada, orci nisi consequat turpis, at auctor lacus dolor quis metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vulputate auctor tristique.</p>
+                
+                <a href="#"><img src="images/pfacebook.png"></a>
+                <a href="#"><img src="images/ptwitter.png"></a>
+                <a href="#"><img src="images/pinsta.png"></a>
+                </div>
             </div>
             <div class="clr"></div>
             
@@ -237,10 +278,10 @@ Defeat is not an option.  </p>
             <div class="box-inner">
               <div class="two-columns">
                 <h1>Learn More</h1>
-                <p class="lead"> <span class="is-hidden-palm">Send us an email:</span> </p>
-                <form action="#">
-                	<input type="text">
-                    <textarea></textarea>
+                <p class="emails">Send us an email: </p>
+                <form action="#" class="contform">
+                	<input type="text" placeholder="email address">
+                    <textarea>message</textarea><br>
                     <input type="submit" value="send email">
                 </form>
               </div>
@@ -249,9 +290,7 @@ Defeat is not an option.  </p>
                 <div class="map">
                 	<img src="images/map.gif" alt="">
                 </div>
-                <p>Los Angeles Area</p>
-                <p>555-555-5555</p>
-                <p>info@ourcompany.com</p>
+                <p class="address">Los Angeles Area<br><span>555-555-5555<br>info@ourcompany.com</span></p>
                 
               </div>
             </div>

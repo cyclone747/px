@@ -86,6 +86,16 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 .scroller-arrow-holder {
 	height:60px;
 }
@@ -1199,7 +1209,7 @@ img {
 	max-width:100%
 }
 html {
-	font-family:"ProximaNova-Regular", Helvetica, Arial, sans-serif;
+	font-family: 'open_sanssemibold';
 	-webkit-text-size-adjust:100%;
 	-moz-text-size-adjust:100%;
 	-ms-text-size-adjust:100%;
@@ -1209,12 +1219,12 @@ body {
 	line-height:1.5
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family:"ProximaNova-Bold", Helvetica, Arial, sans-serif;
+	font-family: 'open_sanssemibold';
 	font-weight:normal;
 	text-rendering:optimizelegibility
 }
 h1 {
-	font-size:2em;
+	font-size:48px;
 	line-height:1;
 	margin:0 0 .5em
 }
@@ -1239,8 +1249,8 @@ h2 {
 }
 }
 p {
-	font-family:"ProximaNova-Regular", Helvetica, Arial, sans-serif;
-	font-size:1.125em;
+	font-family: 'open_sanslight_italic';
+	font-size:24px;
 	margin:0 0 1em
 }
 @media screen and (max-width:991px) {
@@ -1252,7 +1262,7 @@ p small {
 	font-size:.75em
 }
 .lead {
-	font-size:1.25em
+	font-size:18px;
 }
 @media screen and (max-width:991px) {
 .lead {
@@ -2366,7 +2376,7 @@ nav .nav-item {
 	color:#FFF;
 	-webkit-font-smoothing:antialiased;
 	display:inline-block;
-	font-family:"ProximaNova-Bold", Helvetica, Arial, sans-serif;
+	font-family: 'open_sanssemibold';
 	padding:.5em .375em
 }
 .nav-header .nav-item .nav-link:hover {
@@ -2614,9 +2624,56 @@ nav .nav-item {
 	color:#a1a0a0;
 	font-family: 'open_sanslight';
 }
+.emails {
+	font-family: 'open_sanssemibold_italic';
+	font-size:14px;
+	color:#FFF;
+}
+.contform input[type=text] {
+	border:1px solid #7b8e99;
+	padding:12px;
+	background:#082c40;
+	font-family: 'open_sanssemibold_italic';
+	font-size:14px;
+	color:#FFF;
+	width:70%;
+}
+.contform textarea {
+	border:1px solid #7b8e99;
+	padding:12px;
+	background:#082c40;
+	font-family: 'open_sanssemibold_italic';
+	font-size:14px;
+	color:#FFF;
+	width:70%;
+	margin:15px 0 0 0;
+}
+.contform input[type=submit] {
+	border:1px solid #959595;
+	padding:12px;
+	background:#393939;
+	font-family: 'open_sanssemibold_italic';
+	font-size:14px;
+	color:#FFF;
+	margin:15px 0 0 0;
+	cursor:pointer;
+}
+.address {
+	color:#FFF;
+	font-family: 'open_sanssemibold';
+	font-size:14px;
+	float:left;
+}
+.address span {
+	font-family: 'open_sanslight';
+}
 .nav-footer .small .nav-item a {
 	color:#999;
 	font-size:.75em
+}
+.mysmallimg div.artwork-strip-tile {display:none !important;}
+.mysmallimg div.smallimg {
+	display:block !important;
 }
 @media screen and (max-width:767px) {
 .reboot .nav-footer .nav-item {
@@ -3456,10 +3513,19 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', end
 	text-align:center
 }
 .page-homepage .lead {
-	margin-bottom:1.8181818182em
+	margin-bottom:1.8181818182em;
+	font-size:24px;
+	font-family: 'open_sanslight_italic';
+	color:#464646;
 }
 .page-homepage h1 {
-	color:#000
+	color:#000;
+	font-family: 'open_sansbold';
+}
+.two-columns h1 {
+	color:#FFF;
+	font-size:24px;
+	font-family: 'open_sanssemibold';
 }
 .page-homepage .dummy-firstload {
 	background-color:#000;
@@ -3509,7 +3575,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', end
 .page-homepage section .box .two-columns {
 	display:table-cell;
 	vertical-align:middle;
-	width:47%;
+	width:49%;
 	text-align:left
 }
 @media screen and (max-width:767px) {
@@ -6759,12 +6825,12 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', end
 	text-align:center;
 }
 .adviceblk img {
-	max-width:90%;
+	max-width:100%;
 	height:auto;
 }
 .teamblk {
 	width:23%;
-	padding:0 1%;
+	margin:0 1%;
 	position:relative;
 	float:left;
 }
@@ -6774,9 +6840,28 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', end
 	right:20px;
 	cursor:pointer;
 }
+.temcap {
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:url(../images/ptxtbg.png) repeat left top;
+	color:#FFF;
+	display:none;
+	left:0;
+	top:0;
+}
+.temcap p {
+	font-size:12px;
+	line-height:16px;
+	font-family: 'open_sansregular';
+	color:#FFF;
+	padding:10px;
+	margin:0 0 7px 0;
+	text-align:justify;
+}
 .map {
 	float:left;
-	padding-right:20px;
+	padding-right:12px;
 }
 #section-radio {
 	background:#082c40;
